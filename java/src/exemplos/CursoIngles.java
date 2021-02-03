@@ -7,7 +7,7 @@ public class CursoIngles {
 	public static void main (String[] args)
 	{
 		Scanner leia = new Scanner (System.in);
-		Pessoas aluno1 = new Pessoas();
+		Pessoas aluno1 = new Pessoas("teste");
 		
 		System.out.println("Digite o nome: ");
 		aluno1.nome = leia.next();
@@ -17,7 +17,7 @@ public class CursoIngles {
 		aluno1.anoNascimento = leia.nextInt();
 		
 		System.out.printf("Oi %s, sua idade aproximada é %d!!\n",aluno1.nome, aluno1.idade());
-		System.out.print();
+	
 		
 		
 	}
