@@ -40,8 +40,6 @@ public class Teste {
 	Vendedor vend= new Vendedor("Carla",1000);
 	
 	System.out.printf("\nA comissão é %s é R$ %d ",vend.getNome(),vend.comissao());
-	
-    
-	
+		
 	}
 }
