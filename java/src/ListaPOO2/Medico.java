@@ -1,11 +1,11 @@
 package ListaPOO2;
 
-public class Medico extends L7Pessoa {
+public class Medico extends Pessoa {
 
 	private String crm;
 	private String especialidade;
 	private boolean redePublica;
-	
+
 	public Medico(String nome, String endereco, String telefone, String crm, String especialidade,
 			boolean redePublica) {
 		super(nome, endereco, telefone);
@@ -13,6 +13,7 @@ public class Medico extends L7Pessoa {
 		this.especialidade = especialidade;
 		this.redePublica = redePublica;
 	}
+
 	public String getCrm() {
 		return crm;
 	}
