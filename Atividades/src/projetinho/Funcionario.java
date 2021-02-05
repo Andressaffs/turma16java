@@ -38,6 +38,23 @@ public class Funcionario {
 	public double getValorHora() {
 		return valorHora;
 	}
+	
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public void setMatricula(int matricula) {
+		this.matricula = matricula;
+	}
+
+	public void setHoras(int horas) {
+		this.horas = horas;
+	}
+
+	public void setValorHora(double valorHora) {
+		this.valorHora = valorHora;
+	}
+
 	//metodo
 	public double salario() {
 		double salario;

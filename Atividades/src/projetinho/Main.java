@@ -1,14 +1,52 @@
 package projetinho;
 
+import java.util.Locale;
+import java.util.Scanner;
+
 public class Main {
 
 	public static void main (String args[]) {
-		Funcionario func = new Funcionario("João",13,44,30.0);
-		Terceiro terc = new Terceiro("José",12,50,30.0,15.0);
+			
+		Locale.setDefault(Locale.US);
+		Scanner leia = new Scanner(System.in);
+		
+		System.out.print("Digite a matricula :");
+		int matricula = leia.nextInt();
+		leia.nextLine();//limpeza do buffer de teclado
+		System.out.print("Digite o nome :");
+		String nome = leia.nextLine();
+		System.out.print("Digite as horas trabalhadas: ");
+		int horas = leia.nextInt();
+		System.out.print("Digite o valor por hora trabalhada :");
+		double valorHora = leia.nextDouble();
+		System.out.print("Terceiro S/N :");
+		char op = leia.next().toUpperCase().charAt(0);
 		
 		
-		System.out.printf("Funcionario: %s.\nSalário: %.2f",func.getNome(),func.salario());
-		System.out.printf("\nFuncionario: %s.\nSalário: %.2f",terc.getNome(),terc.salario());
+		if (op == 'S')
+		{
+			System.out.println("Digite o valor do acrescimo : ");
+			double acrescimo = leia.nextDouble();
+		    Funcionario func1 = new Terceiro(nome, matricula, horas, valorHora, acrescimo);
+			System.out.println("Matricula:"+func1.getMatricula());
+			System.out.println("Nome :"+func1.getNome());
+			System.out.println("SAlario: "+func1.salario());
+			
+			
+		}
+		else if (op =='N')
+		{
+			Funcionario func1 = new Funcionario (nome, matricula, horas, valorHora);
+			System.out.println("Matricula:"+func1.getMatricula());
+			System.out.println("Nome :"+func1.getNome());
+			System.out.println("SAlario: "+func1.salario());
+		}
+		
+		
+		
+		
+		
+		
 		
 	}
 }

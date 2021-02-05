@@ -1,6 +1,6 @@
 package projetinho;
 
-public class Terceiro extends Funcionario{
+public final class Terceiro extends Funcionario{
 	
 	private double acrescimo;
 
