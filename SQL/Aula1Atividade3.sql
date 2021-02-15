@@ -17,6 +17,8 @@ select * from tb_alunos;
 select nome, nota from tb_alunos where nota > 7;
 select nome, nota from tb_alunos where nota <= 7;
 
+alter table tb_alunos change nota nota_alunos decimal;
+
 
 insert into tb_alunos (nome, nota, materia, ano, turma) values ("Ana",10,"Português",9,3);
 insert into tb_alunos (nome, nota, materia, ano, turma) values ("Beatriz",7,"Português",9,3);
